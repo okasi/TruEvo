@@ -65,7 +65,7 @@ export default function Home() {
     <>
       <Script
         src={`${
-          location?.protocol || "https"
+          (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "test") ? "http" : "https"
         }://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js`}
         strategy="lazyOnload"
         onLoad={() => {
