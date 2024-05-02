@@ -64,7 +64,9 @@ export default function Home() {
   return (
     <>
       <Script
-        src={`${location.protocol}://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js`}
+        src={`${
+          location?.protocol || "https"
+        }://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js`}
         strategy="lazyOnload"
         onLoad={() => {
           window.dispatchEvent(new Event("particles-js-load"));
@@ -76,7 +78,9 @@ export default function Home() {
       ></div>
       <main className="flex justify-center h-screen items-center">
         <div className="bg-gradient-brand p-6 text-center min-w-fit max-w-96 mx-6 rounded-2xl -mt-12 md:-mt-[4.5rem]">
-          <h1 className="text-white text-7xl md:text-8xl font-medium mx-8 my-2">TruEvo</h1>
+          <h1 className="text-white text-7xl md:text-8xl font-medium mx-8 my-2">
+            TruEvo
+          </h1>
         </div>
       </main>
     </>
