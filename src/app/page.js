@@ -65,7 +65,7 @@ export default function Home() {
     <>
       <Script
         src={`${
-          (process.env.NODE_ENV === "development" || process.env.NODE_ENV === "test") ? "http" : "https"
+          process.env.NODE_ENV === "production" ? "https" : "http"
         }://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js`}
         strategy="lazyOnload"
         onLoad={() => {
