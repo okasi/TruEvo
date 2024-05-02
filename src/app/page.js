@@ -74,7 +74,7 @@ export default function Home() {
       />
       <div
         id="particles-js"
-        className="bg-[#222222] h-full w-full fixed top-0 left-0 -z-10"
+        className="bg-black h-full w-full fixed top-0 left-0 -z-10"
       ></div>
       <main className="flex justify-center h-screen items-center">
         <div className="bg-gradient-brand p-6 text-center min-w-fit max-w-96 mx-6 rounded-2xl -mt-12 md:-mt-[4.5rem]">
