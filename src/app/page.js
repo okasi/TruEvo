@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <>
       <Script
-        src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+        src={`${location.protocol}://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js`}
         strategy="lazyOnload"
         onLoad={() => {
           window.dispatchEvent(new Event("particles-js-load"));
